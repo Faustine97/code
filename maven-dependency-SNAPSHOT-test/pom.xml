@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ucarinc</groupId>
+  <artifactId>cmd_maven_java</artifactId>
+  <packaging>jar</packaging>
+  <!-- 此处使用快照版本，当更新远程仓库上的库时但版本号不变时，依赖该库的用户重新构建时能自动搜索远程仓库上最新版本并更新-->
+  <version>1.0-SNAPSHOT</version>
+  <name>cmd_maven_java</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+	  <!-- 此处使用依赖版本区间，自动下载远程仓库最新版本，使用3.8版本及以上最新版本-->
+      <version>[3.8.1,)</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
